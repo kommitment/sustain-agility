@@ -1,8 +1,66 @@
 body {
-  background-color: #fff;
-  color: #d9edeb;
+  color: #9de7e0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  background-color: #0c0819;
+  background-color: #131313;
 }
+ /* I want images to scale to 42% of page width */
+ /* I want the image to be on the right side of the page */
+
+.logo {
+  float: right;
+  width: 342px;
+  max-width: 23%;
+}
+
+/* I would like all the headings to have small caps */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #00dac4;
+  text-transform: uppercase;
+}
+h1 .subtitle {
+  font-size: 0.6em;
+  color: #9de7e0;
+}
+
+/* I would like ul to have a dot */
+ul li{
+  list-style-type: disc;
+}
+
+.signal {
+  color: #fe4180;
+}
+
+.relax {
+  color: #ab7be6;
+}
+
+
+/* I would like the text to rainbow animated */
+.rainbow {
+  font-family: monospace;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+
